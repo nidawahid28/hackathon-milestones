@@ -1,0 +1,189 @@
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 150px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+    background: linear-gradient(-45deg,#a405bd, #262525 70%);
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #a405bd;
+    box-sizing: border-box;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #a405bd;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #a405bd;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#objective h3{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#objective{
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 10%;
+}
+#certification h3{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10%;
+}
+#certification{
+    text-align: justify;
+    hyphens: auto;
+}
+#certification p{
+    text-align: center;
+    hyphens: auto;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color:#a405bd;
+    color: #ffffff;
+}
+/* Media Queries for Responsiveness */
+
+/* For tablets and small screens (landscape) */
+@media (max-width: 1024px) {
+    .resume-container {
+        width: 90%; /* Make the container wider */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Make sections stack vertically */
+        border-right: none; /* Remove border on smaller screens */
+    }
+
+    .left-section {
+        border-bottom: 5px solid #a405bd;
+    }
+
+    h1 {
+        font-size: 22px; /* Adjust heading size */
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+/* For mobile devices (portrait) */
+@media (max-width: 768px) {
+    body {
+        padding: 50px 20px; /* Adjust padding for mobile */
+    }
+
+    .resume-container {
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none; /* Remove shadow for a cleaner mobile look */
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%; /* Make button full width on mobile */
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* For very small screens (less than 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 20px; /* Even less padding on very small devices */
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
